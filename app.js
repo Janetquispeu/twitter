@@ -1,5 +1,11 @@
 window.addEventListener("load", function() {
 	var btn=document.getElementById("btn");	
+	btn.addEventListener("click",function(e){
+		e.preventDefault();
+		var text=document.getElementById("text").value;
+		newtexto(text);
+		document.getElementById("text").value="";
+	});
 	function newtexto(text){
 		var elemento=document.createElement("div");
 		var conten=document.getElementById("conten");
@@ -10,9 +16,5 @@ window.addEventListener("load", function() {
 			conten.insertBefore(elemento,conten.childNodes[0]);
 		}
 	}
-	btn.addEventListener("click",function(){
-		var text=document.getElementById("text").value;
-		newtexto(text);
-	});
 });
 
