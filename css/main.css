@@ -9,8 +9,8 @@ body{
 
 }
 textarea{
+	overflow: hidden;
 	width: 400px;
-	height: 100px;
 	margin-top: 30px;
 }
 button{
@@ -33,6 +33,9 @@ form{
 }
 .caracter140{
 	color: red;
+}
+.crece{
+	visibility: hidden;
 }
 
 
