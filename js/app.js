@@ -24,9 +24,19 @@ window.addEventListener("load", function() {
 	});
 	function contador(text){
 		btn.disabled=false;
-		var limite =10;
+		var limite =140;
 		var longitud=document.getElementById("text").value.length;
 		document.getElementById("contador").innerHTML=limite-longitud;
+		if (longitud>120 && longitud<130) {
+			document.getElementById("contador").classList.add("caracter120");
+		}
+		else if (longitud>130 && longitud<140) {
+			document.getElementById("contador").classList.add("caracter130");
+		}
+		else if(longitud >= 140){
+			btn.disabled=true;
+			document.getElementById("contador").classList.add("caracter140");
+		}
 	}
 
 
