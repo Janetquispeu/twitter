@@ -6,6 +6,7 @@ window.addEventListener("load", function() {
 		var text=document.getElementById("text").value;
 		newtexto(text);
 		document.getElementById("text").value="";
+		document.getElementById("contador").innerHTML=140;
 		btn.disabled=true;		
 	});
 	function newtexto(text){
@@ -32,14 +33,18 @@ window.addEventListener("load", function() {
 			document.getElementById("contador").classList.add("caracter130");
 		}else if(longitud > 140){
 			btn.disabled=true;
-		}       
+		document.getElementById("contador").classList.add("caracter140");
+		}    
+		else if(longitud==0){
+			btn.disabled=true;
+		}   
 	}
 	text.addEventListener('keydown', autosize); 
     function autosize(){
       var el = this;
-      setTimeout(function(){
         el.style.cssText = 'height:auto; padding:0';
         el.style.cssText = 'height:' + el.scrollHeight + 'px';
-      },0);
-    } 
+      
+    }
 });
+
