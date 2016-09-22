@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<meta charset="utf-8">
 	<title>Eventos</title>
 </head>
 <body>
-	<form id="form1">
-		<h1>Tweet</h1>
-		<div id="hora"></div>
+	<section>
+		<h1>Twitter</h1>
+	</section>
+	<form id="form1">	
+		<h2>What are you doing?</h2>
+		<span id="contador">140</span>
 		<textarea id="text" rows="4"></textarea>
 		<br><br>
-		<span id="contador"></span>
-		<button id="btn" type="submit" >Publicar</button>
+		<button class="btn btn-primary btn-lg active" id="btn" type="submit">Publicar</button>
 		<br><br>
-		<div id="conten"></div>
-		<span id="referencia"></span>
+		<div id="conten" class="bg-success"></div>
+		<br>
 	</form>
 	<script type="text/javascript" src="js/app.js"></script>
 </body>
