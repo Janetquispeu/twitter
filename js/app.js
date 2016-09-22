@@ -12,7 +12,9 @@ window.addEventListener("load", function() {
 	function newtexto(text){
 		var elemento=document.createElement("div");
 		var conten=document.getElementById("conten");
-		elemento.innerText=text;
+		var hora = new Date().toLocaleTimeString(navigator.language, {hour: '2-digit', minute:'2-digit'});
+		elemento.innerText=text + " "+ hora;
+
 		if(!conten.childNodes[0]){
 			conten.appendChild(elemento);
 		}else{
@@ -47,4 +49,3 @@ window.addEventListener("load", function() {
       
     }
 });
-
