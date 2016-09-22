@@ -6,8 +6,8 @@ En el evento, coger el texto del textarea.
 Agregar el texto al HTML.
 
 Versión 0.0.2:
-No ingresar texto vacío (deshabilitar el botón de enviar).
-Contar la cantidad de caracteres de forma regresiva.
+En nuestro textare no debe ingresar texto vacío si pasa esto deshabilitaremos el botón de enviar.
+Contar la cantidad de caracteres de forma regresiva teniendo un limite de 140 carácteres.
 
 Versión 0.0.3:
 Si pasa los 140 caracteres, deshabilitar el botón.
